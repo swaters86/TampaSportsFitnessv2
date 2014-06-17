@@ -1,0 +1,77 @@
+<div id="wrapper">
+	<!-- Start Content Overview Header --> 
+	<div class="pure-g-r push-top-10">
+
+		<div class="pure-u-1">
+
+			<div class="inner-box">
+
+				<h2>{{organization.name}}</h2> 
+
+			
+
+				<p>{{organization.category}}</p>
+
+				<p>{{organization.keywords}}</p>
+
+				<p><a href="http://{{organization.website}}">{{organization.website}}</a></p>
+
+				<p>{{organization.description}}</p>
+
+				<h4>Schedule</h4>
+
+				<ul>
+					<li ng-repeat="occurrence in organization.occurrences">
+						<label>{{occurrence.weekday}}</label>, <label>{{occurrence.starttime}}</label>, <label>@ {{occurrence.location.venue}}</label>
+					</li>
+				</ul>
+
+			
+				<h4>Rating</h4>
+
+				<ul id="rating" class="list-style-1">
+					<li><i class="fa fa-star fa-1"></i></li>
+					<li><i class="fa fa-star fa-1"></i></li>
+					<li><i class="fa fa-star fa-1"></i></li>
+					<li><i class="fa fa-star fa-1"></i></li>
+					<li><i class="fa fa-star fa-1"></i></li>
+				</ul>
+
+				<p>You can rate this awesome organization by signing in. <strong>Note:</strong> You can only rate 5 different organizations per month</p>
+
+				<!--
+
+				<h4>Sponsors</h4>
+
+				<div class="pure-u-1-4" ng-repeat="sponsor in organization.sponsors">
+					<div class="sponsor inner-box">
+						<a href="http://{{sponsor.link}}" title="">{{sponsor.name}}</a>
+					</div>
+				</div>
+
+
+				<h4>Members</h4>
+
+				<div class="pure-u-1-4" ng-repeat="sponsor in organization.sponsors">
+					<div class="member inner-box">
+						<img src="" alt="" />
+						<a href="http://{{member.link}}" title="">{{member.name}}</a>
+					</div>
+				</div>
+
+			-->
+
+				<a href="/TampaSportsFitness/#/organizations/{{organization.guid}}/edit" class="pure-button pure-button-primary"><i class="fa fa-pencil-square fa-1"></i> Edit</a>
+				
+		    </div>
+
+
+
+		    
+
+	    </div>
+
+    </div>
+	<!-- End Content Overview Header --> 
+</div>
+

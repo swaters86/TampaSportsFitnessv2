@@ -1,0 +1,79 @@
+<!-- Start Content Overview Header --> 
+<div  id="section-header" class="pure-g-r">
+
+    
+	<div id="intro" class="pure-u-1">
+
+			<h2>Organizations</h2> 
+
+			<p>Clubs, Teams, Gyms, and Groups in the Tampa Bay area.</p>
+
+			<button type="submit" class="pure-button pure-button-primary">Add Yours</button>
+
+	</div>
+
+</div>
+<!-- End Content Overview Header -->
+
+<div id="wrapper"> 
+	<!-- Start Content Overview Filter Controls -->
+	<div class="pure-g-r">
+
+		<div class="pure-u-1">
+
+			<div class="inner-box">
+
+				<form id="search-form" class="pure-form pure-form-aligned">
+					
+					<div class="pure-control-group">
+			
+					<label for="filter-keywords">Filter by Keywords</label>
+				    <input id="filter-keywords" type="text" placeholder="ex. running,social,beer" ng-model="searchText"> 
+
+					</div>
+				
+				</form>
+
+			</div>	
+
+		</div>
+
+	</div>
+	<!-- End Content Overview Controls --> 
+
+	<!-- Start Content Overview Main Content -->
+	<div class="pure-g-r">
+
+		<div class="pure-u-1" ng-repeat="organization in organizations | filter:searchText">
+
+			<div class="inner-box">
+
+				 <a href="/TampaSportsFitness/#/organizations/{{organization.guid}}" title="{{organization.name}}">
+					 <h3 ng-bind-html="organization.name | highlight:searchText"></h3>
+				 </a>
+
+				 <p ng-bind-html="organization.description | highlight:searchText"></p>
+
+	        </div>
+
+		</div>
+
+	</div>
+	<!-- End Content Overview Main Content -->
+
+	<!-- Start Content Paginator --> 
+	<div class="pure-g-r">
+		<div class="pure-u-1">
+			<ul class="pure-paginator">
+			    <li><a class="pure-button prev" href="#">&#171;</a></li>
+			    <li><a class="pure-button" href="#">1</a></li>
+			    <li><a class="pure-button pure-button-active" href="#">2</a></li>
+			    <li><a class="pure-button" href="#">3</a></li>
+			    <li><a class="pure-button" href="#">4</a></li>
+			    <li><a class="pure-button" href="#">5</a></li>
+			    <li><a class="pure-button next" href="#">&#187;</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Content Paginator -->
+</div>

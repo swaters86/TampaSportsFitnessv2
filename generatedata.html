@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Generate Dummy Organizations</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta http-equiv="Content-Type" content="text/html; charset-UTF-8" />
+<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+
+<style type="text/css">
+
+body {
+font-family:arial, verdana;
+}
+
+.col-1 {
+float:left;
+width:250px;
+}
+
+.col-2{
+float:left;
+margin:0 0 0 100px;
+width:600px;
+}
+
+.clr {
+clear:both;
+}
+
+button {
+	margin: 0 0 10px 0;
+}
+
+[contenteditable="true"] { 
+	padding: 10px; 
+	outline: 1px dashed #CCC; 
+	background:#000;
+	color:#ccc;
+}
+
+
+</style>
+
+</head>
+	<body>
+		<div id="wrapper">
+
+			<div id="header">
+				<div class="col-1">
+				<img src="assets/images/forestgump.jpeg" alt="" /> 
+				</div>
+				<div class="col-2">
+					<h1>" I sometimes get a little carried away when it comes to generating random JSON feeds. "</h1>
+				</div>
+				<div class="clr"></div>
+			</div>
+
+			<hr> 
+
+			<button id="select-text">Edit</button> 
+
+			<script>
+
+			// Generates a random day of the week 
+			var days = new Array("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
+
+			function getRanDay (min, max) {
+			    var ranNum = Math.random() * (max - min) + min;
+			    return days[Math.round(ranNum)];
+			}
+
+			// Generates a random meridiem 
+			var meridiems = new Array("AM","PM")
+			
+			function getRanMeridiem (min, max) {
+			    var ranNum = Math.random() * (max - min) + min;
+			    return meridiems[Math.round(ranNum)];
+			}
+
+			// Generates a randum number 
+			function getRanNum (min, max) {
+			    var ranNum = Math.random() * (max - min) + min;
+			    return Math.round(ranNum);
+			}
+
+			// Generates a randum City 
+			var cities = new Array("Tampa","Riverview","Plant City","Lutz","Key Largo","Ruskin","Bradenton","St.Pete")
+
+			function getRanCity(min, max) {
+			    var ranNum = Math.random() * (max - min) + min;
+			    return cities[Math.round(ranNum)];
+			}
+
+			// Generates a random category 
+			var categories = new Array ("Kickball","Running","Baseball","Football","Youth Sport","Walking","Charity","Marathon","Triathlon","Yoga","Home Exercise");
+
+			function getRanCategory(min, max) {
+			    var ranNum = Math.random() * (max - min) + min;
+			    return categories[Math.round(ranNum)];
+			}
+
+			// Generates a random keyword 
+
+			var keywords = new Array ("beer","girls","football","soccer","baseball","volleyball","swimming","walking","social","running","mud","run","obstacle","crazy","sunny","winter","sports","awesome","raffles","free","booze","drinks","tennis","ski","water sports","Shaun T","P90X","Insanity","Yogo");
+
+			function getRanKeyword(min, max) {
+			    var ranNum = Math.random() * (max - min) + min;
+			    return keywords[Math.round(ranNum)];
+			}
+
+			function generateRanKeywordList() {
+				return getRanKeyword(0,24) + "," + getRanKeyword(0,20) + "," + getRanKeyword(0,20) + "," + getRanKeyword(0,20) + "," + getRanKeyword(0,20) + "," + getRanKeyword(0,20);
+			}
+
+
+			// Generates a random letter from the Alphabet  
+			var letters = new Array ("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
+
+			function getRanLetter(min, max) {
+			    var ranNum = Math.random() * (max - min) + min;
+			    return letters[Math.round(ranNum)];
+			}
+
+			// Generates a dummy GUID value
+			function generateDummyGUID() {
+				var p1 = getRanLetter(0,25) + getRanNum(1,9) + getRanLetter(0,25) + getRanNum(1,9) + getRanLetter(0,25) + getRanNum(1,9) + getRanNum(1,9) + getRanLetter(0,25);
+				var p2 = getRanLetter(0,25) + getRanLetter(0,25) + getRanNum(1,9) + getRanNum(1,9);
+				var p3 = getRanNum(1,9) + getRanLetter(0,25) + getRanLetter(0,25) + getRanLetter(0,25);
+				var p4 = getRanNum(1,9) + getRanLetter(0,25) + getRanLetter(0,25) + getRanLetter(0,25);
+				var p4 = getRanNum(1,9) + getRanLetter(0,25) + getRanNum(1,9) + getRanLetter(0,25) + getRanNum(1,9) + getRanLetter(0,25) + getRanLetter(0,25) + getRanNum(1,9) + getRanLetter(0,25) + getRanNum(1,9) + getRanLetter(0,25) + getRanLetter(0,25);
+				return p1 + "-" + p2 + "-" + p3 + "-" + p4; 
+			}
+		
+
+			i=1; 
+
+			document.write('<div id="code-block" contenteditable="false">');
+		    document.write('<code>');
+
+			while (i<200) {
+
+			  
+
+				document.write('	{	"guid" : "' + generateDummyGUID() + '", ' + '<br>');
+				document.write('		"name" : "Organization ' + i + '", ' + '<br>');
+				document.write('	"category" : "' + getRanCategory(0,10) + '", ' + '<br>');
+				document.write('	"keywords" : "' + generateRanKeywordList() + '", ' + '<br>');
+				document.write('	"description" : "Proin est metus, elementum quis urna non, laoreet convallis nibh. Donec vestibulum, tortor ut tristique gravida, est odio vulputate lectus, ornare consectetur risus metus vel nisl. Proin tempus dapibus convallis. Phasellus vitae nunc risus.", ' + '<br>');
+				document.write(' "website" : "www.organization' + i + '.com", ' + '<br>');
+				document.write('	"occurrences" : ' + '<br>');
+				document.write('	{ ');
+				document.write('		"weekday" : "' + getRanDay(0,7) + '", ' + '<br>'); 
+				document.write('		"starttime" : "' + getRanNum(1,7) + ":" + getRanNum(11,31) + ' ' + getRanMeridiem(0,1) + '", ' + '<br>');
+				document.write('		"endtime" : "", ' + '<br>');
+				document.write('		"location" : ' + '<br>');
+				document.write('		{ ' + '<br>');
+				document.write('			"venue" : "Venue ' + i + '", ' + '<br>');
+				document.write('			"address" : "' + getRanNum(1000,2000) + ' N ' + getRanNum(4,60) + 'th St ' + getRanCity(0,7) + ', FL ' + getRanNum(30000,39999) + '" ' + '<br>');
+				document.write('		} ' + '<br>');
+				document.write('	} ' + '<br>');
+				document.write('}, ' + '<br>');
+
+			i++
+
+			}
+
+			document.write('</code>');
+			document.write('</div>');
+
+			var button = document.getElementById("select-text");
+
+			button.onclick = function () {
+				document.getElementById("code-block").contentEditable = 'True';
+			}
+
+
+			</script>
+
+	    </div>
+	</body>
+</html>

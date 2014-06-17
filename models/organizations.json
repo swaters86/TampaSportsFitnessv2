@@ -1,0 +1,224 @@
+[
+{	
+"guid" : "L2S6P82K-MB39-6RJD-5O1T6SQ1L5RO", 
+"name" : "Organization 1", 
+"category" : "Youth Sport", 
+"keywords" : "walking,raffles,run,sports,baseball,running", 
+"description" : "Proin est metus, elementum quis urna non, laoreet convallis nibh. Donec vestibulum, tortor ut tristique gravida, est odio vulputate lectus, ornare consectetur risus metus vel nisl. Proin tempus dapibus convallis. Phasellus vitae nunc risus.", 
+"website" : "www.organization1.com", 
+"occurrences" : 
+{ "weekday" : "Thursday", 
+"starttime" : "4:14 AM", 
+"endtime" : "", 
+"location" : 
+{ 
+"venue" : "Venue 1", 
+"address" : "1083 N 56th St Tampa, FL 31806" 
+} 
+} 
+}, 
+{	
+"guid" : "X3E2P43J-LM86-7UFE-6M2G6EG6D9HM", 
+"name" : "Organization 2", 
+"category" : "Home Exercise", 
+"keywords" : "girls,raffles,crazy,sports,awesome,sports", 
+"description" : "Proin est metus, elementum quis urna non, laoreet convallis nibh. Donec vestibulum, tortor ut tristique gravida, est odio vulputate lectus, ornare consectetur risus metus vel nisl. Proin tempus dapibus convallis. Phasellus vitae nunc risus.", 
+"website" : "www.organization2.com", 
+"occurrences" : 
+{ "weekday" : "Tuesday", 
+"starttime" : "6:18 AM", 
+"endtime" : "", 
+"location" : 
+{ 
+"venue" : "Venue 2", 
+"address" : "1717 N 22th St Plant City, FL 36119" 
+} 
+} 
+}, 
+{	
+"guid" : "Y7P4V87Q-MQ46-7ZRH-2F8E2SV3N8TD", 
+"name" : "Organization 3", 
+"category" : "Youth Sport", 
+"keywords" : "ski,mud,social,walking,winter,football", 
+"description" : "Proin est metus, elementum quis urna non, laoreet convallis nibh. Donec vestibulum, tortor ut tristique gravida, est odio vulputate lectus, ornare consectetur risus metus vel nisl. Proin tempus dapibus convallis. Phasellus vitae nunc risus.", 
+"website" : "www.organization3.com", 
+"occurrences" : 
+{ "weekday" : "Thursday", 
+"starttime" : "5:21 AM", 
+"endtime" : "", 
+"location" : 
+{ 
+"venue" : "Venue 3", 
+"address" : "1091 N 49th St Key Largo, FL 31818" 
+} 
+} 
+}, 
+{	
+"guid" : "E6P4B62I-UC29-7XJO-3D3Q8QV4H6QS", 
+"name" : "Organization 4", 
+"category" : "Football", 
+"keywords" : "winter,obstacle,crazy,sunny,baseball,volleyball", 
+"description" : "Proin est metus, elementum quis urna non, laoreet convallis nibh. Donec vestibulum, tortor ut tristique gravida, est odio vulputate lectus, ornare consectetur risus metus vel nisl. Proin tempus dapibus convallis. Phasellus vitae nunc risus.", 
+"website" : "www.organization4.com", 
+"occurrences" : 
+{ "weekday" : "Monday", 
+"starttime" : "4:14 PM", 
+"endtime" : "", 
+"location" : 
+{ 
+"venue" : "Venue 4", 
+"address" : "1561 N 5th St Key Largo, FL 38853" 
+} 
+} 
+}, 
+{	
+"guid" : "B6H6Y48U-OO88-5EVM-3E3V5QB4I8KR", 
+"name" : "Organization 5", 
+"category" : "Walking", 
+"keywords" : "baseball,crazy,crazy,volleyball,raffles,run", 
+"description" : "Proin est metus, elementum quis urna non, laoreet convallis nibh. Donec vestibulum, tortor ut tristique gravida, est odio vulputate lectus, ornare consectetur risus metus vel nisl. Proin tempus dapibus convallis. Phasellus vitae nunc risus.", 
+"website" : "www.organization5.com", 
+"occurrences" : 
+{ "weekday" : "Monday", 
+"starttime" : "4:15 AM", 
+"endtime" : "", 
+"location" : 
+{ 
+"venue" : "Venue 5", 
+"address" : "1834 N 39th St Lutz, FL 34615" 
+} 
+} 
+}, 
+{	
+"guid" : "V5V5X27A-EP75-5SXQ-1Q2F5BY1P6YV", 
+"name" : "Organization 6", 
+"category" : "Youth Sport", 
+"keywords" : "crazy,sports,sunny,raffles,walking,mud", 
+"description" : "Proin est metus, elementum quis urna non, laoreet convallis nibh. Donec vestibulum, tortor ut tristique gravida, est odio vulputate lectus, ornare consectetur risus metus vel nisl. Proin tempus dapibus convallis. Phasellus vitae nunc risus.", 
+"website" : "www.organization6.com", 
+"occurrences" : 
+{ "weekday" : "Friday", 
+"starttime" : "4:26 PM", 
+"endtime" : "", 
+"location" : 
+{ 
+"venue" : "Venue 6", 
+"address" : "1621 N 29th St Plant City, FL 32015" 
+} 
+} 
+}, 
+{
+	"guid" : "C87FC84A-EE47-47EE-842C-29E969AC5131",
+	"name" : "813 Fit Club", 
+	"category" : "Home Exercise",
+	"keywords" : "running,home excercises, yoga",
+	"description" : "This is a description for the 813 Fit Club. We meet at the HoJo in Tampa every Tuesday night. You will feel like a million bucks after going to one of these workouts.", 
+	"website" : "www.813fitclub.com",
+	"occurrences" : 
+	{
+		"weekday" : "Tuesdays", 
+		"starttime" : "6:30 PM",
+		"endtime" : "",
+		"location" : 
+		{
+			"venue" : "Howard Johnson Inn", 
+			"address" : "2520 N 50th St  Tampa, FL 33619"
+		}
+	}
+},
+{
+	"guid" : "2A734AE4-E0EF-4D77-9F84-51A8365AC5A0",
+	"name" : "Tampa Running For Brews", 
+	"category" : "Running",
+	"keywords" : "tampa,running,social,beer,philanthropy,walking",
+	"description" : "Running for Brews is a social running club that combines running, drinking, networking, and giving. We love craft beers, 5ks, socials, philanthropy, and life! It’s Free! Just fill out a Liability Waiver and Join Us. ", 
+	"website" : "www.runningforbrews.com",
+	"occurrences" :
+	 [{
+		"weekday" : "Tuesdays", 
+		"starttime" : "7:00 PM",
+		"endtime" : "",
+		"location" : {
+			"venue" : "Macdintons SoHo", 
+			"address" : "405 S Howard Ave  Tampa, FL 33606"
+		}
+	}, 
+	{
+		"weekday" : "Wednesdays", 
+		"starttime" : "7:00 PM",
+		"endtime" : "",
+		"location" : 
+		{
+			"venue" : "Pourhouse", 
+			"address" : "1208 E Kennedy Blvd #112  Tampa, FL 33602"
+		}
+	},
+	{
+		"weekday" : "Thursdays", 
+		"starttime" : "7:00 PM",
+		"endtime" : "",
+		"location" : 
+		{
+			"venue" : "Yard of Ale SoHo", 
+			"address" : "406 S Howard Ave  Tampa, FL 33606"
+		}
+	}]
+},
+ {
+	"guid" : "70E2E8DE-500E-4630-B3CB-166131D35C21",
+	"name" : "St. Pete Running For Brews", 
+	"category" : "Running",
+	"keywords" : "st.pete,running,social,beer,philanthropy,walking",
+	"description" : "Running for Brews is a social running club that combines running, drinking, networking, and giving. We love craft beers, 5ks, socials, philanthropy, and life! It’s Free! Just fill out a Liability Waiver and Join Us.", 
+	"website" : "www.runningforbrews.com",
+	"occurrences" :
+	 [{
+		"weekday" : "Tuesdays", 
+		"starttime" : "7:00 PM",
+		"endtime" : "",
+		"location" : {
+			"venue" : "The Ale &amp; The Witch", 
+			"address" : "111 2nd Ave NE  St Petersburg, FL 33701"
+		}
+	}, 
+	{
+		"weekday" : "Wednesdays", 
+		"starttime" : "7:00 PM",
+		"endtime" : "",
+		"location" : 
+		{
+			"venue" : "Five Bucks Drinkery", 
+			"address" : "247 Central Ave  St Petersburg, FL 33701"
+		}
+	},
+	{
+		"weekday" : "Thursdays", 
+		"starttime" : "7:00 PM",
+		"endtime" : "",
+		"location" : 
+		{
+			"venue" : "MacDintons St. Pete", 
+			"address" : "242 1st Ave N  St Petersburg, FL 33701"
+		}
+	}]
+},
+ {
+	"guid" : "15ED815C-921C-4011-8667-7158982951EA",
+	"name" : "CrossFit 813", 
+	"category" : "Crossfit",
+	"keywords" : "crossfit, gym",
+	"description" : "Our program delivers a fitness that is, by design, broad, general, and inclusive. Our specialty is not specializing.", 
+	"website" : "www.CrossFit813.com",
+	"occurrences" :
+	 [{
+		"weekday" : "Saturdays", 
+		"starttime" : "8:30 AM",
+		"endtime" : "9:30 AM",
+		"location" : {
+			"venue" : "Central - SoHo", 
+			"address" : "702 W Gray St Tampa, FL 33606"
+		}
+	}]
+}
+]
+

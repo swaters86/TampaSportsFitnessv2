@@ -1,0 +1,41 @@
+{
+	"guid" : "C87FC84A-EE47-47EE-842C-29E969AC5131",
+	"name" : "813 Fit Club", 
+	"category" : "Home Exercise",
+	"keywords" : "running,home excercises, yoga",
+	"description" : "This is a description for the 813 Fit Club. We meet at the HoJo in Tampa every Tuesday night. You will feel like a million bucks after going to one of these workouts.", 
+	"website" : "www.813fitclub.com",
+	"occurrences" : [
+	{
+		"weekday" : "Tuesdays", 
+		"starttime" : "6:30 PM",
+		"endtime" : "",
+		"location" : 
+		{
+			"venue" : "Howard Johnson Inn", 
+			"address" : "2520 N 50th St  Tampa, FL 33619"
+		}
+	} ] , 
+	"sponsors" : [
+	{
+		"name" : "Google",
+		"link" : "www.google.com"
+	}, 
+     {
+     	"name" : "Yahoo",
+		"link" : "www.yahoo.com"
+     },
+     {
+     	"name" : "Bing",
+		"link" : "www.bing.com"
+     },
+     {
+     	"name" : "Dog Pile",
+		"link" : "www.dogpile.com"
+     },
+     {
+     	"name" : "Yandex ",
+		"link" : "www.yandex.com"
+     }
+	]
+}
